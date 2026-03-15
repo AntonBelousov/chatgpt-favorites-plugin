@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1d1d1f;
+  background: #fafafa;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero */
+
+.hero {
+  text-align: center;
+  padding: 80px 0 64px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.tagline {
+  font-size: 17px;
+  color: #555;
+  max-width: 440px;
+  margin: 0 auto 28px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.note {
+  font-size: 13px;
+  color: #999;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.btn-primary {
+  background: #1d1d1f;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #333;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #1d1d1f;
+  border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+  border-color: #bbb;
+  background: #f5f5f5;
+}
+
+/* Sections */
+
+section {
+  padding: 48px 0;
+}
+
+section + section {
+  border-top: 1px solid #eee;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+
+section > p {
+  color: #555;
+  font-size: 15px;
+  max-width: 520px;
+}
+
+section > p + p {
+  margin-top: 10px;
+}
+
+/* Cards */
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px 22px;
+}
+
+.card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Install */
+
+.install p {
+  margin-bottom: 16px;
+}
+
+.install code {
+  font-size: 13px;
+  background: #eee;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Feedback */
+
+.feedback p {
+  margin-bottom: 16px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 40px 24px;
+  font-size: 13px;
+  color: #bbb;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive */
+
+@media (min-width: 520px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero {
+    padding: 100px 0 72px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+}
